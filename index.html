@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            margin: 25px 0px 0px 0px;
+            color: red;
+            font-style: oblique
+        }
+        h2{
+            color: green;
+            font-style: italic;
+        }
+        h3{
+            color: blue;
+        }
+        label{
+            color: rgb(233,210 ,0);
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Please choose a corse you wanted to join</h1>
+<form action="bootstrap.html " method="get">
+    <h2>COURSES OFFERED</h2>
+    <label for="FSWD">FULLSTACK:</label>
+    <input id="FSWD" type="radio" name="loc" value="FULL STACK">
+    <label for="DS">DATA SCIENCE:</label>
+    <input id ="DS" type="radio"name="loc" value="DATA SCIENCE">
+    <label for="DM">DIGITAL MARKETING:</label>
+    <input id="DM" type="radio" name="loc" value="DIGITAL MARKETING">
+
+    <h3>Pleas provide rating to the course</h3>
+    <select name="RATING">
+        <option value="GREAT">gR8</option>
+        <option value="GOOD">gud</option>
+        <option value="AVERAGE">avf</option>
+        <option value="SATISFACTORY">sat</option>
+        <option value="POOR">por</option>
+    </select>
+    <h3>Any other feedback</h3>
+    <textarea name="YOUR FEEDBACK" cols="100" rows="10"></textarea>
+    <br>
+    
+    <input type="sumbit" name="" value="SUBMIT" onclick="sp()">
+    
+<script>
+    function sp(){
+        alert("Thank you for registering to full stack web development course!")
+    }
+</script>
+</form>
+    </center>
+</body>
+</html>
